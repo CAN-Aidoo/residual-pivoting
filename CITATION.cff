@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "residual-pivoting: code and data for Residual Learning on a Physics Pivoting Controller"
+authors:
+  - family-names: Aidoo
+    given-names: Clement
+    affiliation: CANLABS
+    orcid: "https://orcid.org/0009-0005-6893-2677"
+version: 1.0.0
+date-released: 2026-10-13
+license: MIT
+repository-code: "https://github.com/CAN-Aidoo/residual-pivoting"
+keywords:
+  - robotics
+  - residual reinforcement learning
+  - gravitational pivoting
+  - motor current sensing
+  - MuJoCo
+references:
+  - type: article
+    title: "Gravity Pivoting from Motor Current: Calibration-Free Angle Estimation and the Sensing Budget It Requires"
+    authors:
+      - family-names: Aidoo
+        given-names: Clement
+    doi: "10.31224/8492"
+    year: 2026
