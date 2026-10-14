@@ -1,3 +1,4 @@
+![Banner](figures/banner.png)
 # residual-pivoting
 
 Code and data for the preprint **"Residual Learning on a Physics Pivoting Controller: Faster Search, and Where the Quasi-Static Model Breaks"** (Clement Aidoo, CANLABS, 2026).
