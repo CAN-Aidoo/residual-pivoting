@@ -1,3 +1,4 @@
+  ![Banner](figures/banner.png)
 # residual-pivoting
 
 [![engrXiv](https://img.shields.io/badge/engrXiv-10.31224%2F8542-blue)](https://doi.org/10.31224/8542) [![DOI](https://img.shields.io/badge/code-10.5281%2Fzenodo.23352629-blue)](https://doi.org/10.5281/zenodo.23352629)
