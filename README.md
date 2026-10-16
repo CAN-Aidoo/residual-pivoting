@@ -1,7 +1,8 @@
-![Banner](figures/banner_residual_pivoting.png)
 # residual-pivoting
 
-Code and data for the preprint **"Residual Learning on a Physics Pivoting Controller: Faster Search, and Where the Quasi-Static Model Breaks"** (Clement Aidoo, CANLABS, 2026).
+[![engrXiv](https://img.shields.io/badge/engrXiv-10.31224%2F8542-blue)](https://doi.org/10.31224/8542) [![DOI](https://img.shields.io/badge/code-10.5281%2Fzenodo.23352629-blue)](https://doi.org/10.5281/zenodo.23352629)
+
+Code and data for the preprint **"Residual Learning on a Physics Pivoting Controller: Faster Search, and Where the Quasi-Static Model Breaks"** (Clement Aidoo, CANLABS, 2026), engrXiv, doi:[10.31224/8542](https://doi.org/10.31224/8542).
 
 Companion to [Gravity Pivoting from Motor Current](https://doi.org/10.31224/8492) (engrXiv). A learned residual (linear policy, evolution strategies) is added on top of the motor-current gravity-pivoting controller from [motor-current-pivoting](https://doi.org/10.5281/zenodo.23264189), and compared with the plain controller and with a policy learned without the model. **All results are from MuJoCo simulation.** Read the paper's Limitations and "Chronology and possible leakage" paragraphs before reusing any number.
 
@@ -32,6 +33,17 @@ python analyze.py && python traj_analysis.py && python firstslip_analysis.py && 
 python extra_stats.py && python gen_numbers.py && python figs.py
 ```
 Scripts write outputs to the working directory; the committed `results/` contain the exact files used in the paper.
+
+## Citation
+```bibtex
+@misc{aidoo2026residual,
+  author = {Aidoo, Clement},
+  title  = {Residual Learning on a Physics Pivoting Controller: Faster Search, and Where the Quasi-Static Model Breaks},
+  year   = {2026},
+  publisher = {engrXiv},
+  doi    = {10.31224/8542}
+}
+```
 
 ## AI assistance
 An AI assistant (Claude, Anthropic) was used to write and debug code and to draft the paper. The author directed the study, reviewed code, results and text, and is responsible for the content.

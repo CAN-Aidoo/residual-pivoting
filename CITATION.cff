@@ -16,6 +16,17 @@ keywords:
   - gravitational pivoting
   - motor current sensing
   - MuJoCo
+preferred-citation:
+  type: article
+  title: "Residual Learning on a Physics Pivoting Controller: Faster Search, and Where the Quasi-Static Model Breaks"
+  authors:
+    - family-names: Aidoo
+      given-names: Clement
+      orcid: "https://orcid.org/0009-0005-6893-2677"
+  doi: "10.31224/8542"
+  year: 2026
+  publisher:
+    name: engrXiv
 references:
   - type: article
     title: "Gravity Pivoting from Motor Current: Calibration-Free Angle Estimation and the Sensing Budget It Requires"
