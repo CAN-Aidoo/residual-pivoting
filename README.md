@@ -7,6 +7,8 @@ Code and data for the preprint **"Residual Learning on a Physics Pivoting Contro
 
 Companion to [Gravity Pivoting from Motor Current](https://doi.org/10.31224/8492) (engrXiv). A learned residual (linear policy, evolution strategies) is added on top of the motor-current gravity-pivoting controller from [motor-current-pivoting](https://doi.org/10.5281/zenodo.23264189), and compared with the plain controller and with a policy learned without the model. **All results are from MuJoCo simulation.** Read the paper's Limitations and "Chronology and possible leakage" paragraphs before reusing any number.
 
+> **Correction (version 2, October 2026).** Version 1 of the paper reported that capping the release rate of the trained residual policies after training made every seed worse (validation set: 58/38/54% within 0.05 rad). That was a coding error: the rate-capped mode (`residualR`) used the pure-RL force rule instead of the residual rule. The one-line fix is in `pivot_env.py`. With the same weights, objects and seeds, the capped policies reach 96/96/92% within 0.05 rad, against 92/92/88% unguarded and 96% for the model controller. No other number changes. `results/eval_val_rate_v1_buggy.json` reproduces the version-1 output; `results/eval_val_rate.json` is the corrected run.
+
 ## Requirements
 Python 3.12, `mujoco==3.15.0`, `numpy`, `scipy`, `matplotlib`. This repo imports the testbed (`mj_env.py`, `mj_ctrl.py`, `motor_model.py`, `exp_c.py`) from the paper-1 repository: clone it next to this one, or set `PIVOT1_DIR` to its path.
 

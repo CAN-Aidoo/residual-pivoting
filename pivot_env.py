@@ -97,7 +97,7 @@ class PivotEpisode:
             if mode not in ("model", "modelG") and F_last is not None:
                 a = np.clip(policy(features(th, target, F_last, F0, k, moved, c_hat)), -1, 1)
                 rate = RATE0 * np.exp(SR * a[1])
-                if mode in ("residual", "residualG"):
+                if mode in ("residual", "residualG", "residualR"):
                     F = F_model * np.exp(SF * a[0])
                 else:  # pure: learned multiplicative step down from the last force
                     F = F_last * np.exp(-SP * (1 + a[0]) / 2)
